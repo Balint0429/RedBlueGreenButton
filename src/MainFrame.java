@@ -32,36 +32,31 @@ public class MainFrame extends JFrame{
         maiPnl.setLayout(new BorderLayout());
         this.add(maiPnl);
 
-        JPanel northJPanel = new JPanel();
-        northJPanel.setSize(400, 30);
-        northJPanel.setBackground(Color.pink);
-        maiPnl.add(northJPanel,BorderLayout.NORTH);
+        JPanel northJPnl = new JPanel();
+        northJPnl.setSize(400, 30);
+        northJPnl.setBackground(Color.pink);
+        maiPnl.add(northJPnl,BorderLayout.NORTH);
 
-        JPanel eastJPanel = new JPanel();
-        eastJPanel.setSize(30,240);
-        eastJPanel.setBackground(Color.pink);
-        maiPnl.add(eastJPanel,BorderLayout.EAST);
+        JPanel eastJPnl = new JPanel();
+        eastJPnl.setSize(30,240);
+        eastJPnl.setBackground(Color.pink);
+        maiPnl.add(eastJPnl,BorderLayout.EAST);
 
-        JPanel soutJPanel = new JPanel();
-        soutJPanel.setSize(400, 30);
-        soutJPanel.setBackground(Color.pink);
-        redBtn = new JButton("P");
-        blueBtn = new JButton("B");
-        greenBtn = new JButton("G");
-        exitBtn = new JButton("Exit");
-        alapBtn = new JButton("Alap");
-        soutJPanel.setLayout(new FlowLayout (FlowLayout.CENTER));
-        soutJPanel.add(redBtn);
-        soutJPanel.add(blueBtn);
-        soutJPanel.add(greenBtn);
-        soutJPanel.add(exitBtn);
-        soutJPanel.add(alapBtn);
-        maiPnl.add(soutJPanel,BorderLayout.SOUTH);
+        JPanel soutJPnl = new JPanel();
+        soutJPnl.setSize(400, 30);
+        soutJPnl.setBackground(Color.pink);
+        soutJPnl.setLayout(new FlowLayout (FlowLayout.CENTER));
+            redBtn = new JButton("P");      soutJPnl.add(redBtn);
+            blueBtn = new JButton("B");     soutJPnl.add(blueBtn);
+            greenBtn = new JButton("G");    soutJPnl.add(greenBtn);
+            exitBtn = new JButton("Exit");  soutJPnl.add(exitBtn);
+            alapBtn = new JButton("A");  soutJPnl.add(alapBtn);
+        maiPnl.add(soutJPnl,BorderLayout.SOUTH);
 
-        JPanel westJPanel = new JPanel();
-        westJPanel.setSize(30, 240);
-        westJPanel.setBackground(Color.pink);
-        maiPnl.add(westJPanel,BorderLayout.WEST);
+        JPanel westJPnl = new JPanel();
+        westJPnl.setSize(30, 240);
+        westJPnl.setBackground(Color.pink);
+        maiPnl.add(westJPnl,BorderLayout.WEST);
 
         centralJPanel = new JPanel();
         centralJPanel.setBackground(Color.GRAY);
@@ -79,8 +74,5 @@ public class MainFrame extends JFrame{
     public JButton getBlue() {return blueBtn;}
     public JButton getGreen() {return greenBtn;}
     public JButton getAlap() {return alapBtn;}
-
-
-
    
 }

@@ -6,11 +6,9 @@ public class FormContoler implements ActionListener {
     private MainFrame mainFrm;
     
     FormContoler(){
-
         mainFrm = new MainFrame();
         setComentsAction();
         start();
-
     }
 
     private void setComentsAction(){
@@ -19,13 +17,11 @@ public class FormContoler implements ActionListener {
         mainFrm.getRed().addActionListener(this);
         mainFrm.getGreen().addActionListener(this);
         mainFrm.getBlue().addActionListener(this);
-        mainFrm.getAlap().addActionListener(this);      
-        
+        mainFrm.getAlap().addActionListener(this);              
     }
 
     private void start(){
-        mainFrm.setVisible(true);
-        
+        mainFrm.setVisible(true);        
     }
 
     public void actionPerformed(ActionEvent event) {
